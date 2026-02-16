@@ -64,7 +64,7 @@ echo "IBAN: FR76XXXXXXXXXXXX" > test.txt
 
 Chiffrer
 
-python file_encryptor.py encrypt test.txt test.enc --passphrase "SuperSecret123!"
+python file_encrypt.py encrypt test.txt test.enc --passphrase "SuperSecret123!"
 
 
 Vérifier qu’il est illisible
@@ -74,7 +74,7 @@ cat test.enc
 
 Déchiffrer
 
-python file_encryptor.py decrypt test.enc test_decrypted.txt --passphrase "SuperSecret123!"
+python file_encrypt.py decrypt test.enc test_decrypted.txt --passphrase "SuperSecret123!"
 
 
 Comparer
